@@ -23,11 +23,46 @@ function Hero() {
   )
 }
 
+const icons = {
+  leaf: (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 22C12 22 3 17 3 9a9 9 0 0 1 18 0c0 8-9 13-9 13z"/>
+      <path d="M12 9v13"/>
+    </svg>
+  ),
+  library: (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="3" y="3" width="7" height="9" rx="1"/>
+      <rect x="14" y="3" width="7" height="5" rx="1"/>
+      <rect x="14" y="12" width="7" height="9" rx="1"/>
+      <rect x="3" y="16" width="7" height="5" rx="1"/>
+    </svg>
+  ),
+  calendar: (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="3" y="4" width="18" height="18" rx="2"/>
+      <path d="M16 2v4M8 2v4M3 10h18"/>
+      <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
+    </svg>
+  ),
+  frost: (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 2v20M2 12h20"/>
+      <path d="m4.93 4.93 14.14 14.14M19.07 4.93 4.93 19.07"/>
+      <path d="M12 6 9 3M12 6l3-3M12 18l-3 3M12 18l3 3M6 12l-3-3M6 12l-3 3M18 12l3-3M18 12l3 3"/>
+    </svg>
+  ),
+}
+
 function About() {
   return (
     <section className="section about" id="about">
       <div className="container">
-        <div className="section-label">About</div>
+        <div className="section-label-row">
+          <span className="section-label-line" />
+          <span className="section-label">About</span>
+          <span className="section-label-line" />
+        </div>
         <div className="about-grid">
           <div className="about-text">
             <h2>A companion for people who love growing things</h2>
@@ -50,19 +85,19 @@ function About() {
             <h3>What Sown does</h3>
             <ul className="feature-list">
               <li>
-                <span className="feature-icon">🌿</span>
+                <span className="feature-icon">{icons.leaf}</span>
                 Scan and identify plants from a photo or tag
               </li>
               <li>
-                <span className="feature-icon">📚</span>
+                <span className="feature-icon">{icons.library}</span>
                 Build a personal library of everything growing in your garden
               </li>
               <li>
-                <span className="feature-icon">📅</span>
+                <span className="feature-icon">{icons.calendar}</span>
                 Get seasonal reminders so you never miss a planting window
               </li>
               <li>
-                <span className="feature-icon">❄️</span>
+                <span className="feature-icon">{icons.frost}</span>
                 Receive frost alerts before the temperature drops overnight
               </li>
             </ul>
@@ -77,7 +112,11 @@ function Products() {
   return (
     <section className="section products" id="shop">
       <div className="container">
-        <div className="section-label">Shop</div>
+        <div className="section-label-row">
+          <span className="section-label-line" />
+          <span className="section-label">Shop</span>
+          <span className="section-label-line" />
+        </div>
         <div className="products-inner">
           <h2>Sown Garden & Home</h2>
           <p className="products-sub">
@@ -106,14 +145,22 @@ function AppSection() {
             <img src={iconLight} alt="" className="app-icon" />
           </div>
           <div className="app-text">
-            <div className="section-label light">The App</div>
-            <h2>Sown for iOS</h2>
+            <div className="section-label-row">
+              <span className="section-label-line light" />
+              <span className="section-label light">The App</span>
+              <span className="section-label-line light" />
+            </div>
+            <h2>The app is coming.</h2>
             <p>
-              The Sown app is in development — a garden companion that identifies plants,
-              tracks what you're growing, and tells you exactly what to do and when.
-              No jargon. No faff. Just the garden knowledge you need, when you need it.
+              Sown is a garden companion for iOS — it identifies plants, tracks what
+              you're growing, and tells you exactly what to do and when. No jargon.
+              No faff. Just the garden knowledge you need, when you need it.
             </p>
-            <p className="app-cta-label">Want to be one of our first testers?</p>
+            <p>
+              We're building it now. If you'd like to be one of our first testers,
+              drop your email below and we'll be in touch when we're ready.
+            </p>
+            <p className="app-cta-label">Get early access</p>
             <form className="signup-form" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"

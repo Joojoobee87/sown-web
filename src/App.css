@@ -43,14 +43,31 @@
   padding: 5rem 0;
 }
 
+.section-label-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-label-line {
+  flex: 1;
+  height: 1px;
+  background: var(--moss);
+}
+
+.section-label-line.light {
+  background: rgba(191, 202, 173, 0.35);
+}
+
 .section-label {
   font-family: var(--sans);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 500;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--clay);
-  margin-bottom: 1.5rem;
+  color: var(--fern);
+  flex-shrink: 0;
 }
 
 .section-label.light {
@@ -147,8 +164,9 @@
 
 .feature-icon {
   flex-shrink: 0;
-  font-size: 1.1rem;
-  margin-top: 0.05rem;
+  color: var(--fern);
+  margin-top: 0.1rem;
+  opacity: 0.8;
 }
 
 /* ── Products ── */
