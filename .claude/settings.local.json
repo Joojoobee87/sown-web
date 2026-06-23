@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /Users/jobroomfield/Desktop/Sown/SownBranding/)",
+      "Read(//Users/jobroomfield/Desktop/**)",
+      "Bash(npm create *)",
+      "Bash(node --version 2>&1; which node; ls ~/.nvm/versions/node/)",
+      "Bash(cp \"/Users/jobroomfield/Desktop/Sown/Sown Branding/Primary Logo/PNG/Primary Logo-01.png\" /Users/jobroomfield/CascadeProjects/sown-website/src/assets/brand/logo-dark.png)",
+      "Bash(cp \"/Users/jobroomfield/Desktop/Sown/Sown Branding/Primary Logo/PNG/Primary Logo-02.png\" /Users/jobroomfield/CascadeProjects/sown-website/src/assets/brand/logo-light.png)",
+      "Bash(cp \"/Users/jobroomfield/Desktop/Sown/Sown Branding/Primary Icon/PNG/Primary Icon-01.png\" /Users/jobroomfield/CascadeProjects/sown-website/src/assets/brand/icon-dark.png)",
+      "Bash(cp \"/Users/jobroomfield/Desktop/Sown/Sown Branding/Primary Icon/PNG/Primary Icon-02.png\" /Users/jobroomfield/CascadeProjects/sown-website/src/assets/brand/icon-light.png)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

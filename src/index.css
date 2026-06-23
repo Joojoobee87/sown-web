@@ -1,0 +1,51 @@
+:root {
+  --fern: #4A5940;
+  --sage: #D4DCCA;
+  --moss: #BFCAAD;
+  --clay: #C8B99A;
+  --parchment: #F7F4EF;
+  --white: #ffffff;
+  --text: #3a3a35;
+  --text-light: #6b6b63;
+
+  --serif: 'Lora', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--parchment);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--fern);
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: inherit;
+}
